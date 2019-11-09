@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jc7-hA-hQZ">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Play Video View Controller-->
+        <scene sceneID="2pn-pJ-IS1">
+            <objects>
+                <viewController id="jc7-hA-hQZ" customClass="PlayVideoViewController" customModule="PlayVideoView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M58-5H-5Sa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-Yg-nwJ" customClass="PlayVideoView" customModule="PlayVideoView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hgv-O5-bu9">
+                                <rect key="frame" x="137" y="219" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m4u-Gi-qY8">
+                                <rect key="frame" x="135.5" y="318.5" width="51" height="31"/>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Xho-Yg-nwJ" firstAttribute="centerY" secondItem="jfH-zo-Pjx" secondAttribute="centerY" id="2SM-jC-WX8"/>
+                            <constraint firstItem="Xho-Yg-nwJ" firstAttribute="height" secondItem="jfH-zo-Pjx" secondAttribute="height" id="Jx2-pg-cDr"/>
+                            <constraint firstItem="Xho-Yg-nwJ" firstAttribute="centerX" secondItem="jfH-zo-Pjx" secondAttribute="centerX" id="VTM-V8-4Yk"/>
+                            <constraint firstItem="Hgv-O5-bu9" firstAttribute="centerY" secondItem="jfH-zo-Pjx" secondAttribute="centerY" constant="-50" id="bPo-tJ-fs8"/>
+                            <constraint firstItem="m4u-Gi-qY8" firstAttribute="centerX" secondItem="jfH-zo-Pjx" secondAttribute="centerX" id="f8H-WD-e7x"/>
+                            <constraint firstItem="m4u-Gi-qY8" firstAttribute="centerY" secondItem="jfH-zo-Pjx" secondAttribute="centerY" constant="50" id="fiJ-WX-pPB"/>
+                            <constraint firstItem="Hgv-O5-bu9" firstAttribute="centerX" secondItem="jfH-zo-Pjx" secondAttribute="centerX" id="mBa-4E-cam"/>
+                            <constraint firstItem="Xho-Yg-nwJ" firstAttribute="width" secondItem="jfH-zo-Pjx" secondAttribute="width" id="pLD-hn-Fht"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jfH-zo-Pjx"/>
+                    </view>
+                    <connections>
+                        <outlet property="playVideoView" destination="Xho-Yg-nwJ" id="nIm-9B-MGl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZqL-a3-JgY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1390" y="-303"/>
+        </scene>
+    </scenes>
+</document>
